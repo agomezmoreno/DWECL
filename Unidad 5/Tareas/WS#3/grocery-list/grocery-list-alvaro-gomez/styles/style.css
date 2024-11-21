@@ -1,0 +1,159 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f4f4f9;
+    color: #333333;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+}
+
+section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+#input_list {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: #f4f4f9;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: 1px solid #d1d1d1;
+    font-size: 1rem;
+    color: #333333;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+#input_list::placeholder {
+    color: #666666;
+}
+
+#btn_submit {
+    background-color: #4e9f3d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-left: 1rem;
+}
+
+#btn_submit:hover {
+    background-color: #388e3c;
+}
+
+#btn_clear {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s linear;
+}
+
+#btn_clear:hover {
+    background-color: #d32f2f;
+}
+
+#list {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+    color: #333333;
+    transition: all 0.3s linear;
+}
+
+#list li:hover {
+    background-color: #e7f5e6;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.btn_edit, .btn_delete {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn_edit:hover, .btn_delete:hover {
+    opacity: 0.7;
+}
+
+#edit_window {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+#edit_window input {
+    padding: 0.5rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+#btn_accept {
+    background-color: #4e9f3d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#btn_accept:hover {
+    background-color: #388e3c;
+}
